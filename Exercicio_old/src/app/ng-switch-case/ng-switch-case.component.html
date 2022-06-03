@@ -1,0 +1,20 @@
+<!--<div [ngSwuitch]="expressão condicional">
+  <p *ngSwitchCase="condição 1">mostra conteúdo 1</p>
+  <p *ngSwitchCase="condição 2">mostra conteúdo 2</p>
+  <p *ngSwitchCase="condição 3">mostra conteúdo 3</p>
+  <p *ngSwitchCase="condição 4">mostra conteúdo 4</p>
+
+  <p *ngSwitchDefault>mostra conteúdo padrão</p>
+</div>
+-->
+<div [ngSwitch]="numero">
+  <p *ngSwitchCase="1">a variável está com valor de {{numero}}</p>
+  <p *ngSwitchCase="2">a variável está com valor de {{numero}}</p>
+  <p *ngSwitchCase="3">a variável está com valor de {{numero}}</p>
+  <p *ngSwitchCase="4">a variável está com valor de {{numero}}</p>
+  <p *ngSwitchCase="4">a variável está com valor de {{numero}}</p>
+
+  <p *ngSwitchDefault>Mensagem padrão</p>
+</div>
+
+<button (click)="incrementarNumero()">Incrementar número</button>
